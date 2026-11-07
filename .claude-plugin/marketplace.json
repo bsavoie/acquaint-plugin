@@ -1,0 +1,17 @@
+{
+  "name": "acquaint",
+  "owner": {
+    "name": "Brett Savoie"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for Acquaint, the app for remembering people's names and faces."
+  },
+  "plugins": [
+    {
+      "name": "acquaint",
+      "source": "./acquaint",
+      "description": "Add people and build meeting-prep groups in Acquaint from Claude Code.",
+      "version": "0.2.2"
+    }
+  ]
+}
