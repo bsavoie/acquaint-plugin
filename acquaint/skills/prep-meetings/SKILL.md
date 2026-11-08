@@ -56,7 +56,10 @@ unclear cases, and ask about all of them in one question.
    - `candidates`: decide. If one candidate's company matches the organization
      hint, or the name is identical and nothing conflicts, it is the same
      person: include them and remember the pair for `link_emails`. Otherwise
-     it is a question for step 6.
+     look the attendee up at step 5: if the lookup's `profileLinks` share a
+     platform and handle (or a website host) with one candidate's `profiles`,
+     it is the same person and needs no question. If not, it is a question for
+     step 6.
    - `none`: new person.
 
    Matched people with `hasPhoto: false` get a photo at step 8.
@@ -93,6 +96,9 @@ unclear cases, and ask about all of them in one question.
      `person`, `sourceUrls` from `sources` (at most 5), and `fromLookup: true`.
      A title the user gave, or that the person's own email signature states,
      wins over the lookup's.
+   - Profiles: pass the lookup's `profileLinks` URLs as `profileUrls` only
+     when `confidenceLabel` is `high`. A medium-confidence lookup saves no
+     profiles. Never write a profile URL yourself.
    - Without one: `company` is the organization hint, if any. Leave
      `positionTitle` and `positionType` empty unless the user or the
      invitation states them.

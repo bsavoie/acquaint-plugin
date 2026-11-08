@@ -11,7 +11,7 @@
       "name": "acquaint",
       "source": "./acquaint",
       "description": "Add people and build meeting-prep groups in Acquaint from Claude Code.",
-      "version": "0.2.2"
+      "version": "0.3.0"
     }
   ]
 }

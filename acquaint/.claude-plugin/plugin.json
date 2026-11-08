@@ -1,7 +1,7 @@
 {
   "name": "acquaint",
   "displayName": "Acquaint",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Add people and build meeting-prep groups in Acquaint from Claude Code. Requires the Acquaint paid plan.",
   "author": {
     "name": "Brett Savoie"
